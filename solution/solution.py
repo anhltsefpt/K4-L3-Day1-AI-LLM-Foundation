@@ -15,7 +15,7 @@ Hướng dẫn:
 import os
 import time
 from typing import Any, Callable
-        # import TRONG hàm — xem quy tắc ở đầu guide
+from openai import OpenAI          # import TRONG hàm — xem quy tắc ở đầu guide
 
 #client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -503,3 +503,4 @@ if __name__ == "__main__":
     for key, value in stats.items():
         if key != "history":
             print(f"{key}: {value}")
+
